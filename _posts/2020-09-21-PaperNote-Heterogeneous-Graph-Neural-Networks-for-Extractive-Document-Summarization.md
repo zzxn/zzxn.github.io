@@ -59,7 +59,7 @@ tags: 论文 NLP GNN
 
 ------------------------------------------------------------------------------------------
 
-## Impletation Note
+## Implementation Note
 
 * Use [rouge](https://github.com/pltrdy/rouge) (for validation phrase) and [pyrouge](https://github.com/bheinzerling/pyrouge) to compute ROUGE easily
 * Use sklearn to compute word frequency and TF-IDF matrix (`from sklearn.feature_extraction.text import CountVectorizer, TfidfTransformer`)
