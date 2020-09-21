@@ -1,3 +1,8 @@
+---
+title: 【论文笔记】Heterogeneous Graph Neural Networks for Extractive Document Summarization
+tags: 论文 NLP GNN
+---
+
 # 【论文笔记】Heterogeneous Graph Neural Networks for Extractive Document Summarization
 
 ![模型结构](/assets/images/mdref/image-20200914153702221.png)
