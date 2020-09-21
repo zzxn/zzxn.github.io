@@ -3,8 +3,6 @@ title: 【论文笔记】Heterogeneous Graph Neural Networks for Extractive Docu
 tags: 论文 NLP GNN
 ---
 
-# 【论文笔记】Heterogeneous Graph Neural Networks for Extractive Document Summarization
-
 ![模型结构](/assets/images/mdref/image-20200914153702221.png)
 
 文章使用异质图建模句子之间的关系，并将其用于抽取式摘要，取得了优于所有对比模型的效果（本文模型和对比模型均没有使用预训练语言模型，如BERT）。
