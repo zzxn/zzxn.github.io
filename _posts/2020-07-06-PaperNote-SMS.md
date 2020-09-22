@@ -1,4 +1,10 @@
-# 论文笔记：Sentence Mover’s Similarity: Automatic Evaluation for Multi-Sentence Texts Elizabeth
+---
+title: 【论文笔记】Sentence Mover’s Similarity: Automatic Evaluation for Multi-Sentence Texts Elizabeth
+tags: 论文 TextSimilarity OptimalTransport RL NLP
+---
+
+## 概述
+
 在翻译和摘要等文本生成任务中，为了节约人力和时间，我们需要一种自动评估机器生成文本的质量的方式。
 
 * 本文提出了一种计算（多个句子组成的）文本相似度的方式Sentence Mover’s Similarity（SMS）。
@@ -48,9 +54,6 @@ $$
 $$
 \forall j, \Sigma_{i=1}^VT_{i,j} = d_{B, i}
 $$
-
-
-
 
 Word Mover's Similarity（WMS）定义为：
 $$
