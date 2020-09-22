@@ -1,6 +1,6 @@
 ---
 title: 【论文笔记】Sentence Mover’s Similarity: Automatic Evaluation for Multi-Sentence Texts Elizabeth
-tags: 论文 TextSimilarity OptimalTransport RL NLP
+tags: 论文 文本相似度 最优输运 RL NLP
 ---
 
 ## 概述
