@@ -31,6 +31,7 @@ tags: 论文 文本相似度 最优输运 RL NLP
 Word Mover's Distance（WMD）是一种衡量两个序列之间距离的方式。序列可以是句子、段落等。
 
 首先对两个序列A和B，计算每个序列的相对词频，即对每个词i：
+
 $$
 d_{A,i} = {count(i) \over |A|}
 $$
@@ -39,26 +40,35 @@ $$
 这里\|A\|是序列A的总词数，$$ d_{B, i} $$的定义是相似的。
 
 然后定义两个词之间的距离为它们词嵌入向量的欧式距离：
+
 $$
 \Delta(i, j) = ||v_i - v_j||
 $$
+
 最后WMD就是下面这个线性规划问题的解（V是字典的大小，T是一个V×V的矩阵）：
+
 $$
 WMD(A, B) = \min_{T≥0}\Sigma_{i=1}^{V}\Sigma_{i=1}^{V}T_{i, j}\Delta(i, j)
 $$
+
 使得A中每个词流出的权重等于它在A中的权重：
+
 $$
 \forall i, \Sigma_{j=1}^VT_{i,j} = d_{A, i}
 $$
+
 且B中每个词流入的权重等于它在B中的权重：
+
 $$
 \forall j, \Sigma_{i=1}^VT_{i,j} = d_{B, i}
 $$
 
 Word Mover's Similarity（WMS）定义为：
+
 $$
 WMS(A, B) = exp(-WMD(A, B))
 $$
+
 WMS通过两份文本之间词的最小移动距离衡量它们的相似度。
 
 ### 存在的问题
@@ -76,9 +86,11 @@ SMS类似WMS，但是将文本视为Bag of Sentence而不是Bag of Word。
 句子向量为该句子的所有词向量的平均，句子之间的距离为句子向量间的欧氏距离。
 
 文本A中的句子i的权重定义为：
+
 $$
 d_{A, i} = {|i| \over |A|}
 $$
+
 然后解和WMS相同的线性规划问题。
 
 SMS通过两份文本之间句子的最小移动距离衡量它们的相似度。
@@ -86,6 +98,7 @@ SMS通过两份文本之间句子的最小移动距离衡量它们的相似度�
 ### Sentence and Word Mover's Similarity
 
 S+WMS，将文本视为Bag of Both Sentences & Words。
+
 $$
 d_{A, i} =
 \begin{cases}
