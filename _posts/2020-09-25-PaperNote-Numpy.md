@@ -7,12 +7,9 @@ tags: 论文 工程 nature 2020
 
 ## 概述
 
-这篇论文讲了Numpy这一多维数组计算库的核心概念和在Python科学计算生态系统中的位置。
-
+这篇论文多维数组计算库Numpy的核心概念及其Python科学计算生态系统中的位置。
 Numpy诞生于2005年，建立在它的两位前辈Numeric和Numarray的基础之上，结合了两个库的优点，使得社区重新统一。
-
 到2020年，Numpy已经成为几乎每个Python科学/数值计算库的基础组成部分，包括SciPy、Matplotlib、pandas、scikit-learn、scikit-image等，并且因为Numpy数组内禀的简单性，它已经成了Python事实上的数组交换格式。
-
 现在，为了适应新的计算硬件（GPU/分布式系统等）等特殊需求，各种不同的多维数组实现正在不断出现，但是它们都可以使用Numpy的大部分API进行操作，或者至少与Numpy的API非常相似以减少学习成本。Numpy已经成为了Python数组API的参考标准和中心协调机制。
 
 ## Numpy核心概念
@@ -40,7 +37,7 @@ Numpy诞生于2005年，建立在它的两位前辈Numeric和Numarray的基础�
     * 包括：create/reshape/sort/append/线性代数计算...
     * 使用Intel MKL等进行加速
 
-### 在Python科学计算生态系统中的地位
+## Numpy在Python科学计算生态系统中的地位
 
 ![image-20200925113525572](/assets/images/mdref/image-20200925113525572.png)
 
