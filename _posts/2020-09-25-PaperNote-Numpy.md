@@ -4,7 +4,6 @@ tags: 论文 工程 nature 2020
 ---
 
 (nature 2020) Array programming with NumPy
-https://doi.org/10.1038/s41586-020-2649-2
 
 ## 概述
 

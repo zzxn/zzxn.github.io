@@ -1,7 +1,9 @@
 ---
 title: 【论文笔记】Heterogeneous Graph Neural Networks for Extractive Document Summarization
-tags: 论文 NLP GNN
+tags: 论文 NLP GNN acl 2020
 ---
+
+(acl 2020) Heterogeneous Graph Neural Networks for Extractive Document Summarization
 
 ## 概述
 

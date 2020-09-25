@@ -1,7 +1,9 @@
 ---
 title: 【论文笔记】Sentence Mover’s Similarity
-tags: 论文 文本相似度 最优输运 RL NLP
+tags: 论文 文本相似度 最优输运 RL NLP acl 2019
 ---
+
+(acl 2019) Sentence Mover’s Similarity: Automatic Evaluation for Multi-Sentence Texts
 
 ## 概述
 
