@@ -40,7 +40,7 @@ tags: 论文 NLP GNN acl 2020
 > \begin{align}
 > \text{Attention Score: } Z &= LeakyReLU(W_a[W_q H_{Q}; W_k H_K]) \\
 > \text{Attention Distribution: } \alpha_{ij} &= {exp(Z_{ij}) \over \sum_{l \in Neibor_i}{exp(Z_{il})}} \\
-> \text{Attention Vector: } u_i &= \sigma(\sum_{j \in Neibor_i}{W_v V_{[j]}})
+> \text{Attention Vector: } u_i &= \sigma(\sum_{j \in Neibor_i}{\alpha_{ij} W_v H_V[j]})
 > \end{align}
 > $$
 
