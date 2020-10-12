@@ -16,8 +16,8 @@ Rouge的安装向来很麻烦，这里给出在Ubuntu 16.04+和Windows 10两个�
 
 >  下面是在Windows下安装Rouge和 [pyrouge](https://github.com/bheinzerling/pyrouge) 的指南，引用自https://www.jianshu.com/p/cb48ec5eb123，还不行的话参考[这个Stackoverflow问题](https://stackoverflow.com/questions/47045436/how-to-install-the-python-package-pyrouge-on-microsoft-windows/47045437#47045437)
 
-1. 安装 windows版perl [Strawberry Perl](https://links.jianshu.com/go?to=http%3A%2F%2Fstrawberryperl.com%2F)
-2. 安装perl库XML::DOM。运行Strawberry Perl 中的运行组件CPAN Client，输入install XML::DOM
+1. 安装Windows版[Perl](https://links.jianshu.com/go?to=http%3A%2F%2Fstrawberryperl.com%2F)
+2. 安装perl库XML::DOM：运行Strawberry Perl 中的运行组件CPAN Client，输入`install XML::DOM`
 3. 下载 [ROUGE-1.5.5](https://github.com/summanlp/evaluation/tree/master/ROUGE-RELEASE-1.5.5)。 并将`path\to\RELEASE-1.5.5`和`path\to\RELEASE-1.5.5\data`添加到环境变量中
 4. 安装pyrouge：`pip install pyrouge`
 5. 参考pyrouge项目的README使用ROUGE
