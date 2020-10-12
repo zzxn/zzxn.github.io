@@ -1,6 +1,6 @@
 ---
 title: 安装Rouge1.5.5
-tags: 杂项 NLP
+tags: 杂项 NLP ROUGE pyrouge
 ---
 
 Rouge的安装向来很麻烦，这里给出在Ubuntu 16.04+和Windows 10两个系统下安装Rouge 1.5.5的简明步骤。
