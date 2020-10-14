@@ -22,6 +22,7 @@ tags: Linux UNIX 系统运维
 * /var - Another directory inherited from the Unixes of old, it stands for "**var**iable". This is where system data that varies may be stored. Such things as spool and cache directories may be located here. If a program needs to write to the local file-system and isn't serving that data to someone directly, it'll go here.
  * /proc - Kernel and **proc**ess information virtual filesystem. Read it to get the process information as well as other kernel and memory information.
 
+ 除了下方的参考资料（特别是第三个）之外，还可以输入`man heir`查看有关Linux File System Hierarchy的手册。
 
 > 参考资料：
 > * [linux目录名含义](https://blog.csdn.net/Mr_Cat123/article/details/103346618)
