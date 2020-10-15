@@ -3,7 +3,7 @@ title: n维立方体角、面、边的个数
 tags: 杂项 数学 线性代数
 ---
 
-在看Gilbert Strang的*Introduction to the Linear Algebra (5th)的过程中看到一个有趣的问题：
+在看Gilbert Strang的*Introduction to the Linear Algebra* (5th)的过程中看到一个有趣的问题：
 
 > How many corners does a cube have in 4 dimensions? How many 3D faces? How many edges? A typical corner is (0, 0, 1, 0). A typical edge goes to (0, 1, 0, 0).
 
@@ -21,13 +21,13 @@ tags: 杂项 数学 线性代数
 
 ### n维立方体有几个n-1维的面？
 
-> 想象n个互相垂直的轴也不是很困难，例如对于4维空间，在其中一个轴的任何一点，都可以找到与之垂直的一个三维空间。对于更高维的空间，只需要递归地进行这个思路就可以了。
-
 我们可以想象，要画出n维立方体所处的空间，那么就有n个互相垂直的轴，对于我们所讨论的单位立方体，其中的每个面都只需要n-1个变化的component去填充，剩下的那个component是边界值0或者1。
 
 要找到一个面，只需要固定n维向量的1个component为0或者1，然后让其他n - 1个component自由变化填充这个面就可以了，因此：
 
 **n维立方体有$2n$个n - 1维的面**
+
+> 想象n个互相垂直的轴也不是很困难，例如对于4维空间，在其中一个轴的任何一点，都可以找到与之垂直的一个三维空间。对于更高维的空间，只需要递归地进行这个思路就可以了。
 
 ### n维立方体有几个边？
 
