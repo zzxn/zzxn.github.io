@@ -131,8 +131,8 @@ comments:
     clientSecret: "d93a4801bb157a0511166dc7c0d0dc9fbfa569fe" # GitHub Application Client Secret
     repository  : "https://github.com/zzxn/zzxn_blog_comments" # GitHub repo
     owner       : "zzxn" # GitHub repo owner
-    admin: ["zzxn"] # GitHub repo owner and collaborators, only these guys can initialize GitHub issues, IT IS A LIST.
-      # - your GitHub Id
+    admin: # GitHub repo owner and collaborators, only these guys can initialize GitHub issues, IT IS A LIST.
+      - "zzxn" # - your GitHub Id
 
   ## Valine
   # please refer to https://valine.js.org/en/ for more info.
