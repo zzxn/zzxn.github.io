@@ -1,6 +1,7 @@
 ---
 title: Unicode字符编码概要
 tags: 杂项 字符编码 Unicode
+key: abb303716541c8b6c054d634fb96c320
 ---
 
 ## Unicode字符编码模型

@@ -1,6 +1,7 @@
 ---
 title: n维立方体角、面、边的个数
 tags: 杂项 数学 线性代数
+key: d8ca143779b4c3aa1bee5ab181c04ae8
 ---
 
 在看Gilbert Strang的*Introduction to the Linear Algebra* (5th)的过程中看到一个有趣的问题：

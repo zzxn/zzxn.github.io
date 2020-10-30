@@ -1,6 +1,7 @@
 ---
 title: 【论文笔记】Array programming with NumPy
 tags: 论文 工程 nature 2020
+key: bc355fb14a1b9a7838fe9b2566b52708
 ---
 
 (nature 2020) Array programming with NumPy
