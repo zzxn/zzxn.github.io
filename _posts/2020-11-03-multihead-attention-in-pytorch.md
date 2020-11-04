@@ -84,14 +84,14 @@ class MultiHeadSelfAttention(nn.Module):
         # x: tensor of shape (batch, n, dim_in)
         batch, n, dim_in = x.shape
         assert dim_in == self.dim_in
-        nh = self.num_heads
 
+        nh = self.num_heads
         dk = self.dim_k // nh  # dim_k of each head
         dv = self.dim_v // nh  # dim_v of each head
-        dims_perm = (0, 2, 1, 3)
-        q = self.linear_q(x).reshape(batch, n, nh, dk).permute(dims_perm)  # (batch, nh, n, dk)
-        k = self.linear_k(x).reshape(batch, n, nh, dk).permute(dims_perm)  # (batch, nh, n, dk)
-        v = self.linear_v(x).reshape(batch, n, nh, dv).permute(dims_perm)  # (batch, nh, n, dv)
+
+        q = self.linear_q(x).reshape(batch, n, nh, dk).transpose(1, 2)  # (batch, nh, n, dk)
+        k = self.linear_k(x).reshape(batch, n, nh, dk).transpose(1, 2)  # (batch, nh, n, dk)
+        v = self.linear_v(x).reshape(batch, n, nh, dv).transpose(1, 2)  # (batch, nh, n, dv)
 
         q, k = q.reshape(-1, nh, dk), k.reshape(-1, nh, dk)  # batch * nh, n, dk
         v = v.reshape(-1, nh, dv)  # batch * nh, n, dv
@@ -100,7 +100,7 @@ class MultiHeadSelfAttention(nn.Module):
         dist = torch.softmax(dist, dim=-1)  # batch * nh, n, n
 
         att = torch.bmm(dist, v)  # batch * nh, n, dv
-        att = att.reshape(batch, nh, n, dv).permute(0, 2, 1, 3)\
+        att = att.reshape(batch, nh, n, dv).transpose(1, 2)\
             .reshape(batch, nh, self.dim_v)  # batch, n, dim_v
         return att
 ```
