@@ -59,7 +59,7 @@ c.NotebookApp.allow_root = True     # optional, may exist security issue
 NOTEBOOK_ROOT="/home/${USER}/notebookroot"
 LOG_FILE="/home/${USER}/jupyter.log"
 
-mkdir $NOTEBOOK_ROOT &&
+mkdir $NOTEBOOK_ROOT -p &&
 cd $NOTEBOOK_ROOT &&
 nohup jupyter notebook > $LOG_FILE 2>&1 &
 ```
