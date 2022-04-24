@@ -1,8 +1,8 @@
---
+---
 title: 写作应少量多次
 tags: 杂项
 key: writemorewriteless20220425
---
+---
 
 最近在经由[一篇博客](https://www.littlezhang.com/2021/07/%E5%A4%9A%E5%86%99%E5%86%99%E5%B0%91/)，
 了解到Mike Crittenden的一个观点就是：
