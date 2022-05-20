@@ -6,6 +6,8 @@ key: 2022-05-20-v2rayN-config
 
 这是在Linux上使用v2rayN客户端的配置指南。
 
+## 安装运行
+
 我之前买了v2ray的服务，可以在windows上愉快地在Google上查资料，但是最近GitHub的访问变得很不稳定，导致在服务器上的工作收到影响，所以我想直接在Linux服务器上配置v2ray的客户端。
 
 步骤如下：
@@ -21,5 +23,14 @@ download_v2ray() {
 3. `sudo bash install-releases.sh` 安装v2ray
 4. 从Windows客户端导出配置（右键服务器-导出所选服务器为客户端配置）为 v2ray.json ，上传到服务器
 5. 运行 `v2ray -config path/to/v2ray.json`
-6. 测试能否访问 Google `curl https://www.google.com`
+
+## 测试
+
+能够正常访问google就OK
+
+```
+export http_proxy=...
+export https_proxy=...
+curl https://www.google.com
+```
 
